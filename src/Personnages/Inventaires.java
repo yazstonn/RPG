@@ -10,5 +10,6 @@ package Personnages;
  * @author yazst
  */
 public class Inventaires {
+    Objet.Objet[] o;
     
 }
