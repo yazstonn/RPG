@@ -21,6 +21,7 @@ public class Pers {
     private int force;
     private int mana;
     private int magie;
+    private int level;
 
     public Pers() {
     }
@@ -32,6 +33,7 @@ public class Pers {
         this.force = force;
         this.mana = mana;
         this.magie = magie;
+        level = 1;
     }
 
     public int getArmure() {
