@@ -5,11 +5,22 @@
  */
 package Personnages;
 
+import Objet.Objet;
+
 /**
  *
  * @author yazst
  */
 public class Inventaires {
-    Objet.Objet[] o;
+    Objet[][] o;
+
+    public Inventaires(int x,int y) {
+        o = new Objet[x][y];
+    }
+    
+    void aj(int x,int y,Objet ob){
+        o[x][y] = ob;
+    }
+    
     
 }

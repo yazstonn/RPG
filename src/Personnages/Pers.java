@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package Personnages;
+import Objet.*;
+import Objet.Armor.*;
 
 /**
  *
@@ -60,9 +62,11 @@ public class Pers {
         this.armure = armure;
     }
 
-    public void setArmures( Objet.Armor.PArmure p) {
+    public void setArmures( PArmure p) {
         int pos = p.position;
-        inv.aj(armures.remove(pos));
+        armures.remove(pos);
+        armures.add(pos,p);
+        
     }
     
     
